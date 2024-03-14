@@ -28,7 +28,6 @@ import okhttp3.RequestBody;
 import okhttp3.Response;
 
 
-// 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
 public class MainActivity extends AppCompatActivity {
 
     ImageView image_view;
@@ -74,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         RequestBody requestBody = RequestBody.create(json.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/image/generations")
-                .header("Authorization","Bearer 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")
+                .header("Authorization","Bearer ... ") // ... replace it with your openai api key
                 .post(requestBody)
                 .build();
 
